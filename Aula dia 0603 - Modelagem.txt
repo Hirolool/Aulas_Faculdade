@@ -1,0 +1,26 @@
+Aula dia 06/03 - Modelagem
+
+O QUE? /// COMO? /// ESTIMATIVAS
+ Entender a diferença do que o cliente precisa e COMO ele quer, lembrar que nem todos sabem como é o processo de desenvolvimento de certos aspectos.
+ Saber o que o cliente quer, exigências, motivo do produto final, questionar o motivo para não sair perdendo no projeto (tomar uma rasteira vamos dizer).
+
+HISTÓRIA, REGRAS E TESTES - Arquivo cadastro-usuario.md/norg
+
+EXEMPLO: Como ADM do sistema, cadastrar um novo funcionário, manter o registro atualizado e conferir todos os funcionários que estão presentes.
+Aceitação: Preencher campos como Nome, CPF, data de nascimento, email, telefone, cargo;
+Email válido;
+Cpf válido;
+Telefone válido;
+Não pode ter um funcionário já cadastrado;
+A idade deve ser > que 18 anos.
+ Divisão por testes, tabelas, lógicas e rotas, entre outras.
+
+CONSTRUÇÃO DE HISTÓRIAS DESDE PRIMEIRO MOMENTO (Caso desenvolver um programa que seja dessa história criada pelo grupo, pontos adicionais na matéria).
+
+Metodologia Scrum - Consiste em uma estrutura de gestão ágil de projetos que auxilia as equipes a trabalharem de maneira colaborativa e organizada.
+(Isso será implementado no futuro projeto que iremos realizar).
+
+MODELO - Demonstravam como ter uma noção de perspectiva em relação do projeto ao mundo exterior, ter um FEEDBACK antecipado para melhorar ou alterar coisas do projeto em questão. Realizar um modelo ajuda para não ter futuros problemas em relação ao projeto, caso tenha um modelo com feedback antecipado, os gastos pós-produção e lançamento serão reduzidos, com menos falhas.
+ Caso não haja um modelo antecipado, os gastos de produção serão menores, mas os com problemas de falhas após lançamento serão maiores, o que pode ocasionar em feedbacks negativos.
+
+Figma.

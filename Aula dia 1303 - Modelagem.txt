@@ -1,0 +1,36 @@
+Aula dia 13/03 - Modelagem
+
+Draw Io - Criar fluxogramas, wireframes e etc sendo um software de desenhos pela web e pelo aplicativo.
+
+BPMN: Business Process Management and Notation, traduzindo para Modelo e Notação de Processos de Negócio, consiste em uma linguagem que pode modelar processos de negócios, facilitando assim o entendimento para o usuário.
+
+BackLog: Consiste nas pendências e tarefas ainda não realizadas que precisam ser realizadas para concluir um projeto, geralmente é uma ferramenta usada para auxiliar projetos que seguem as metodologias Scrum e Kanban. O Sprint BackLog é um subconjunto do BackLog para esse auxílio de pendências urgentes para a conclusão.
+
+Manifesto para o Desenvolvimento de Software Ágil - 13 de fevereiro de 2001, Snowbird, Utah, EUA.
+" Indivíduos e interações / sobre processos e ferramentas."
+" Software que funciona / sobre uma documentação extensa."
+" Colaboração do cliente / sobre uma negociação de contratos."
+" Responder à mudança / sobre seguir um plano."
+ Itens depois do "/" são os que enquanto possuem valor, os itens antes do "/" são mais valorizados.
+(Não sei se vai ser necessário em algum momento mas...Esses são os nomes dos responsáveis pelo manifesto)
+- Kent Beck;
+- Mike Beedle;
+- Arie van Bennekum;
+- Alistair Cockburn;
+- Ward Cunningham;
+- Martin Fowler;
+- James Grenning;
+- Jim Highsmith;
+- Andrew Hunt;
+- Ron Jeffries;
+- Jon Kern;
+- Brian Marick;
+- Robert C. Martin;
+- Steve Mellor;
+- Ken Schwaber;
+- Jeff Sutherland;
+- Dave Thomas;
+
+Exemplo de histórias para realizar em um futuro projeto, percebendo se elas são complicadas ou simples, quanto mais complicado mais avançado vai ser um futuro código ou vai ir aumentando a história com novas, testes e perguntas.
+
+Extreme Programming (XP): É uma metodologia de processo ágil de software na qual visa criar sistemas de alta qualidade com ciclos de desenvolvimentos curtos, teste contínuos e uma adaptação às mudanças.
