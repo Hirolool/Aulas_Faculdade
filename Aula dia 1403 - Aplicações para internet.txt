@@ -1,0 +1,43 @@
+Aula dia 14/03 - Aplicações para internet
+
+Assuntos da aula:
+- Hospedagem de site;
+- HTML;
+- CSS;
+- Jquery;
+
+HTML: HyperText Markup Language, traduzindo para Linguagem de marcação de hypertexto. HTML é composto por TAG, que indicam início e fim de uma área onde vamos marcar algo, na versão atual (Versão 5), existe uma tag para marcar a cabeça do site, HEAD, e uma para marcar o corpo, BODY.
+
+CSS: Cascade Style Sheet, serve para estilizar o código HTML, o CSS é utilizado em um documento separado para formatar e estilizar seu site com cores, fontes, dimensões, imagens que ficam ainda em outro documento, fazemos sites responsivos com o CSS3 (Responsivos são os que se adaptam a qualquer dispositivo).
+
+PHP: É uma linguagem de programação (Back-End do site), podendo ser estruturado ou Orientado Objeto, ele além deser usado em sites pode ser usado para a construção de sistemas inteligentes e com o uso de banco de dados.
+
+CMS: Sistema de Gerenciamento de Conteúdo, são sistemas prontos e pré-montados para o gerenciamento de sistemas, alguns sites e softwares para utlizar: Joomla! Drupal e WordPress.
+
+- Criar sempre o primeiro arquivo como "index.html".
+
+TAG's para HTML:
+- <doctype html> : informa o tipo de documento, HTML 5 (não é totalmente necessário);
+- <html> </html> : Abertura e fechamento do documento HTML;
+- <head> </head> : Marca o espaço para as informações do site;
+- <title> </title> : Tag para o título do site;
+- <body> </body> : Tag para o corpo do site;
+- <h1> </h1> : Título em negrito destacado;
+- <h2> </h2> : Subtítulo;
+- <h3> </h3> : Texto em negrito;
+- bgcolor: Cor de fundo do site;
+- <font> </font> : Fonte usada e pode adicionar a cor;
+- <img scr> /> : Imagem do dispositivo local.
+
+Exemplo de programação:
+<html>
+ <title> Não tente isso em casa </title>
+  <body bgcolor=gray>
+
+<h1> CABEÇA PISCANDO.COM , </h1> 
+<br> <h2> Novo dia novo eu </h2> 
+<br> <h3> Não perca a cabeça. </h3>
+<br> <font color=blue>Vai ficar feio pra caramba</font>
+ <img scr="Wallpaper foda de fundo.png"
+  </body>
+</html>
