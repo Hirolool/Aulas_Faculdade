@@ -1,0 +1,82 @@
+Aula 17/03 - Organização e arquitetura de computadores
+
+Assunto da aula passada:
+- CPU pega instrução da memória em dispositivos;
+- CPU processa instrução;
+- CPU grava resultado na memória em um dispositivo.
+
+ Busca Instrução: CPU lê a memória em busca do que deve fazer. Sendo cada instrução um conjunto de bits.
+
+ Armazena dados: Supondo que a instrução solicitava armazenamento do dado na memória e guarda a mesma nela.
+
+ CPU possui duas partes: ULA (Unidade Lógica Aritmética) e UC (Unidade de Controle).
+ 
+ULA realiza operações e a UC direciona a operação para o processador.
+
+- Registradores: Para necessidades imediatas e constantes de dados que devem ser atendidas rapidamente a fim de garantir uma operação fluida (para que a CPU possa executar de forma eficiente suas diversas instruções de processamento de dados), a CPU usa registradores, que são uma forma de memória permanente.
+ 
+Processo:
+- Procedimento de execução:
+- UC busca dado na origem (Memória, cache, dispositivo);
+- UC armazena informação em um registrador;
+- UC comanda que ULA processe;
+- ULA lê informação do registrador e processa;
+- ULA armazena resultado em um registrador;
+- UC transfere dado do registrador para o destino (memória, cache e dispositivo).
+
+Resumo (?):
+- A CPU é composta por duas partes: ULA e UC;
+- Uma CPU tem um determinado conjunto de instruções;
+- As instruções são sequências de bits, mas usualmente damos nomes mnemônicos a elas;
+- A ULA não acessa a memória, quem traz os dados é a UC;
+- A UC usualmente permite muitas formas de indicar o endereço em um dado a ser lido.
+
+Exemplo de código Hello World:
+section .text
+    global _start       ; informa o linker (ld) qual é o ponto
+                        ; de entrada
+
+_start:                 ; este é o ponto de entrada
+    mov edx, len        ; comprimento da mensagem
+    mov ecx, msg        ; mensagem a escrever
+    mov ebx, 1          ; instrução para o ficheiro (stdout)
+    mov eax, 4          ; numero da system call (sys_write)
+    int 0x80            ; chama o kernel
+
+    mov eax,1           ; numero da system call (sys_exit
+    int 0x80            ; chama o kernel
+
+section .data
+msg db 'Hello, world!', 0xa     ; esta é a nossa stirng
+len equ $ - msg                 ; comprimento da string
+
+CISC: Significa “Complex Instruction Set Computer”, refere-se a uma arquitetura de computador que utiliza um conjunto de instruções extenso e complexo. O objetivo desta arquitetura é minimizar o número de instruções por programa, sacrificando a quantidade de ciclos por instrução.
+
+RISC: (Reduced Instruction Set Computer) representa uma filosofia de design de processadores que utiliza um conjunto de instruções simples que são executadas em um único ciclo de clock. Esta abordagem visa maximizar a eficiência e a velocidade do processador simplificando o conjunto de instruções e otimizando as operações mais comuns.
+
+A principal diferença entre RISC e CISC reside na complexidade do conjunto de instruções. Enquanto os processadores CISC têm um grande número de instruções, que podem ser bastante complexas e capazes de realizar tarefas múltiplas em poucos ciclos, os processadores RISC têm um número menor de instruções, mais homogêneas e rápidas.
+
+Microprocessador: Um microprocessador é o tipo predominante de processador de computador moderno. Ele combina os componentes e a função de uma unidade central de processamento (CPU) em um único circuito integrado (CI) ou em alguns CIs conectados.
+
+Threads: Os threads podem ser considerados como sequências virtuais de instruções que são emitidas para uma CPU. Basicamente, eles são uma forma de dividir as cargas de trabalho e compartilhar essas responsabilidades entre diferentes processadores.
+
+Tipos de memórias - RAM:
+- RAM: Random Acess Memory, a memória que tem o processo RAM funciona para acessar rapidamente os arquivos armazenados dentro do computador: HD, SSD, Flash e qualquer item que acumule dados e informações. 
+- SRAM: Static Random Acess Memory, é constituída por um circuito, com alguns transistores e o modelo não precisa de atualização constante para manter os dados ativos, o famoso “refresh”. Essa característica faz a memória ser muito mais rápida e econômica do que o modelo DRAM. As SRAM são indicadas para sistemas onde a velocidade e performance são os itens principais.
+- DRAM: Dynamic Random Acess Memory, Por ter sua quantidade de componentes menor e mais espaço no chip, é indicada para sistemas onde o baixo custo e a quantidade de memória são mais vantajosos do que a velocidade. Mas, são amplamente encontradas como memória principal devido ao baixo custo, sendo economicamente mais viáveis.
+
+Expansão de memória:
+ Os fatores que limitam o tamanho máximo de memória possível em um sistema são:
+ - LIMITE DE ENDEREÇAMENTO: Depende do tamanho do barramento de endereços;
+ - LIMITE DE CHIPSET: Limite do controlador de memória;
+ - LIMITE FÍSICO: Número máximo de locais de encaixe de memória.
+
+Módulos de memória
+ Sendo necessário, novos módulos podem ser instalados, porém estes podem ser de diferentes tipos:
+- SIPP (Single In-Line Pin Package): Primeiro modelo de módulo de memória;
+- SIMM (Single In-Line Memory Module): Módulo de memória com 30(SIMM-30) ou 72(SIMM-72) terminais de conexão;
+- DIMM (Double In-Line Memory Module): Módulo de memória que possui 168 terminais para conexão;
+- DDR-DIMM: Módulo de memória criado para memórias DDR-SDRAM;
+- RIMM: Módulo de memória criado para memórias RDRAM.
+
+
