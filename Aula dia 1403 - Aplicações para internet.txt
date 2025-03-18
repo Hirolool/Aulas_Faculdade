@@ -38,6 +38,6 @@ Exemplo de programação:
 <br> <h2> Novo dia novo eu </h2> 
 <br> <h3> Não perca a cabeça. </h3>
 <br> <font color=blue>Vai ficar feio pra caramba</font>
- <img scr="Wallpaper foda de fundo.png"
+ <img src="Wallpaper foda de fundo.png"
   </body>
 </html>
