@@ -1,0 +1,32 @@
+int main(int argc, char *argv[]) {
+	
+	printf("Giovanni Paulo \t");
+	printf("CALABRESA COM QUEIJO \n");
+	printf("Oxes \n");
+	
+	int a, b; //Variavel soma para a soma (dah)
+	a = 69;
+	b = 22;
+	//soma = a+b;
+	//multiplica = a*b;
+	//subtrai = a-b;
+	//divide = a/b;
+	printf("Primeiro numero digitado: %d \n" , a );
+	printf("Segundo numero digitado: %d \n", b);
+	printf("Soma dos dois numeros: %d \n", a+b); //Pode alterar o "a+b" por soma
+	//printf("Soma de: %d, com %d igual a %d", a,b,soma);
+	printf("Multiplicacao dos dois: %d \n", a*b);
+	printf("Subtracao dos dois: %d \n", a-b);
+	printf("Divisao dos dois: %d \n", a/b);
+	
+	int inteiro = 11;
+	float flutuante = 2.73;
+	double real = 3.141516;
+	char texto = 'A';
+	
+	printf("inteiro %d\n", inteiro);
+	printf("flutuante %f\n", flutuante);
+	printf("real %f\n", real);
+	printf("texto %c\n", texto);
+	return 0;
+}
