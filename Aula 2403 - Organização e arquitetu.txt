@@ -1,0 +1,79 @@
+Aula 24/03 - Organização e arquitetura
+
+Memória: É um dispositivo que armazena e recupera dados e programas. Funcionamento da memória consiste de que é necessário a CPU e memória terem o mesmo acesso de bits, exemplo, se a CPU tem 8 bits a memória é de 8 bits também, para um tempo de resposta funcional a memória e a CPU tem que ter velocidades compatíveis, uma memória muito rápida resulta em um tempo de resposta abaixo do recomendado.
+
+Tipos de memória e os usos:
+- Registradores (Armazenamento interno): Armazenamento de curto prazo; 
+* uso intensivo pelo computador. Usa memória volátil extremamente rápida, seu custo de R$ por bit é muito alto.
+
+- Memória Principal (Armazenamento interno): Armazenamento de médio prazo;
+* uso mediano pelo computador. Usa a memória volátil de velocidade média e seu custo por R$ por bit é médio.
+
+- Memória secundária (Armazenamento externo): Armazenamento de longo prazo;
+* poucos uso pelo computador. Usa a memória não volátil lenta e seu custo por R$ por bit é baixo.
+
+- Memória de Segurança (Armazenamento de segurança): Armazenamento de longuíssimo prazo;
+* Quase nunca são usados pelo computador. Uso de memória não volátil extremamente lenta e o custo é de R$ por bit extremamente baixos.
+
+Transferência de uma memória a outra: 
+Registradores <-- Memória Principal <-- Memória Secundária <-- Memória de Segurança
+      Solicitação de dados  /  Carregamento Programa / Recuperação de Backup
+A diferença dos Registradores com a Memória Principal é a velocidade.
+
+- Memória Cache (Entre Registradores e Memória Principal): Armazenamento de curto prazo;
+* Uso intensivo pelo computador. Uso de memória volátil muito rápida e seu custo é alto de R$ por bit. Ela entre de diversas formas em cada tipo de memória:
+- Registradores: 8 a 512 BYTES;
+- Cache: 32KG a 4MB;
+- Memória Principal: 1GB a 32G;
+- Memória Secundária: 512GB a 16TB;
+- Memória de Segurança: 4GB a 4PB.
+
+Diferença mais básica entre tipos de memórias são a ROM (Read Only Memory) e a RAM (Random Access Memory) e somente com um acesso por vez.
+
+- DRAM: Refresh
+* Tempo entre leituras = Prejudicado pelo refresh;
+* Circuitos mais complexos;
+* Mais baratos.
+
+- SRAM: Sem refresh
+* Tempo entre leituras e de respostas menores;
+* Circuitos mais simples (basta alimentar"?");
+* São mais caros.
+----------------------------------------------------------------------------------------------
+BARRAMENTOS DO SISTEMA
+ Barramento, conjunto de fios sendo a comunicação entre dois componentes. Quem controla esses barramentos é a CPU, sendo a "dona".
+
+Barramento de Endereços: 
+- Selecionar endereço de memória ou do dispositivo desejado. Leva as informações sobre a localização dos dados na memória, cada combinação indica um endereço de memória, os endereços são 8, 16, 32, 64 bits.
+
+Barramento de Dados: 
+- Informação a ser transferida entre componentes. Carrega os dados, sendo responsável pela definição da quantidade máxima de bits que podem ser enviadas pelo processador de cada vez.
+
+Barramento de Controle:
+- Configurar quais dispositivos se comunicarão. Indica ao processador se a operação requisitada é de leitura ou gravação.
+
+MREQ: Sinal que liga a memória;
+IORQ: Sinal que liga dispositivos;
+A0~An: Indica endereço do dado;
+D0~Dn: Dado sendo transferido.
+
+PADRÕES DE BARRAMENTOS
+
+- ISA (Industry Standard Architecture): É o barramento original do PC, manipulando 8 bits que depois foi atualizado para 16;
+- EISA/MCA (Enhanced Architecture / Micro Cahnnel Architecture): Trabalham com 32 bits, não evoluiu comercialmente.
+- VESA (Video Eletronics Standards Association): Trabalham com 32 bits sendo voltado aos computadores multimidia, adequado aos processadores 486.
+- PCI (Peripheral Component Interconnect): O atual padrão dele consiste em 64 bits e é compatível com os processadores de família Pentium.
+
+- USB (Universal Serial Bus): Conector que se propõe a atender diversos periféricos, eles podem através de um Hub ter até 127 dispositivos conectados, com o cabo sendo limitado a 5m e possui três padrões:
+* USB 1.0 -> Banda de 1,5 Mbps equivalente a 200KBPS;
+* USB 2.0 -> Full Speed igual a uns USB 1.1: 12 MBPS;
+* USB 2.0 High Speed -> 480 MBPS.
+
+-SCSI (Small Computer System Interface): É uma interface paralela de alta velocidade que também pode conectar vários dispositivos simultaneamente, seu cabo de conexão pode variar entre 7m a 25m e sua velocidade chega de 5 a 640MBPS, não tem compatibilidade com outros padrões SCSI.
+----------------------------------------------------------------------------------------------
+MEIOS MAGNÉTICOS - Fitas
+Fitas magnéticas são removíveis, possuem grande resistência mecânica e a agentes físicos, apresentam homogeneidade magnética e uma grande capacidade de armazenamento, com o acesso de dados sendo sempre sequencial.
+
+- HD (Hard Disk): São formados de vários discos de material rígido que giram concentricamente permitindo que armazenem grandes quantidades de dados que podem ser acessados rapidamente através do acesso direto. O conjunto de disco podem atingir altas velocidade de rotação (7200 rpm).
+
+- SSD (Solid-State Drive): Esse tipo de armazenamento de massa não possui nenhum disco, o dispositivo é todo formado por circuitos integrados e em seu interior não há partes móveis, o que torna silencioso, mais rápido e menos propenso a danos físicos.
