@@ -1,0 +1,22 @@
+Aula 25/03 - Programação
+
+PILARES DO PENSAMENTO COMPUTACIONAL
+- Decomposição: Divisão de um problema em partes menores;
+- Reconhecimento de padrões: Após decompor um problema, é normal notar tarefas semelhantes ou idênticas, o que faz auxiliar na reutilização de soluções para esses problemas com base em experiências passadas;
+- Abstração: Eliminação de detalhes não relevantes para a solução do problema;
+- Algoritmos: Conjunto de instruções claras e finitas necessárias para a solução.
+
+- Tabela Verdade (E):
+A      B       C
+
+V      V       V
+V      F       F
+F      V       F
+F      F       F
+- Tabela Verdade (OU):
+
+V      V       V
+V      F       V
+F      V       V
+F      F       F
+
