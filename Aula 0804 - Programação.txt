@@ -1,0 +1,67 @@
+Aula 08/04 - Programação "em C"
+
+Verifique se o número é positivo:
+
+Algoritmo "VerficaPositivo"
+Var
+ numero: inteiro
+Inicio
+ Escreva("Digite um número: ")
+ Leia(numero)
+
+ Se numero > 0 então
+  Escreva("O número é positivo")
+ FimSe
+Fim
+----------------------------------------------------------------------------------------------
+Verifique se o número é par ou impar:
+
+Algoritmo "VerificaPI"
+Var
+ numero: inteiro
+Inicio
+ Escreva("Digite um número: ")
+ Leia(numero)
+
+ Se numero %2 = 0 então
+  Escreva("O número é par")
+ Senão
+  Escreva("O número é ímpar")
+ FimSe
+Fim
+----------------------------------------------------------------------------------------------
+Classifica em positivo, negativo e igual a 0:
+
+Algoritmo "Classifica PN0"
+Var
+ numero: inteiro
+Inicio
+ Escreva("Digite um número: ")
+ Leia(numero)
+
+ Se numero > 0 então
+  Escreva("O número é positivo")
+ Senão
+  Se numero < 0 então
+   Escreva("O número é negativo")
+  Senão
+   Escreva("O número é igual a 0")
+  FimSe
+ Fimse
+Fim
+----------------------------------------------------------------------------------------------
+Operador %, sendo chamado de módulo ou de resto de divisão inteira, ele retorna o que sobra depois que um número é dividido por outro (De acordo com o exercício 2).
+----------------------------------------------------------------------------------------------
+#include <stdio.h>
+
+int main() {
+ int numero;
+
+ printf("Digite um número: ");
+ scanf("%d", &numero);
+
+ if (numero > 0) {
+ printf("O número é positivo.\n");
+}
+ return 0;
+}
