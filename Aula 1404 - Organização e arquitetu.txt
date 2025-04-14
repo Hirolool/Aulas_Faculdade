@@ -1,0 +1,20 @@
+Aula 1404 - Organização e arquitetura
+
+Informática: Informação e Automática  -->  TI: Tecnologia e Informação  --> O.A.C (Organização e Arquitetura de Computadores): Computador --> Hardware: Mouse, Teclado, etc, e Software: Google, Youtube  --> Sistema Operacional: SO
+
+Arquitetura Básica: Processamento => CPU.
+Memória => Process 12.
+Armazenamento => Armazenar os arquivos.
+
+Dispositivos de Entrada: Converte informações do mundo real em sinais eletricos. (Teclado)
+Dispositivos de Saída: Converte sinais eletricos em informações perceptiveis. (Impressora)
+Decodificador de endereços: Identifica o dispositivo com base no endereço enviado pela CPU, usando sinais como IORQ para iniciar a comunicação.
+
+Polling: A CPU consulta periodicamente os dispositivos, consome mais tempo da CPU.
+Interrupções: O dispositivo interrompe a CPU quando precisa de atenção, reduzindo o desperdicio de tempo mas a CPU perde parte do controle.
+DMA (Acesso Direto a Memória): A transferência de dados é feita diretamente entre o dispositivo e a memória, a CPU apenas configura o DMA e continua suas tarefas.
+------------------------------------------------------------------------------------------------
+
+Pipeline é uma técnica usada para aumentar o desenpenho da UCP (Unidade Central de Processamento), a execução é dividida em vários estágios, permitindo que multiplas instruções sejam processadas simultaneamente. Melhora o desempenho do sistema ao aumentar o throughput (Taxa de controle de instruções).
+
+A UCP (CPU em inglês, Central Processing Unit) é considerada o cérebro do computador. Ela executa instruções dos programas (cálculos, comparações, ela controla e coordena o funcionamento dos demais componentes do sistema, os principais componentes da UCP são a UC (Unidade de Controle), ULA (Unidade Lógica e Aritimética) e os Registradores.
