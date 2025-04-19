@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (int argc, char *argv[]) {
+
+ int numero;
+ printf("Escreva um número: \n");
+scanf("%d", &num);;
+
+ if(numero > 0){
+ printf("O número é positivo.);
+}else if (numero == 0){
+ printf("O número é igual a zero.);
+}else{
+ printf("O número é negativo.");
+}
+ return 0;
+}
+----------------------------------------------------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char, *argv[]) {
+ int nota1, nota2, nota3, media, freq;
+
+ printf("Digite a primeira nota: ");
+ scanf("%d", &nota1);
+ printf("Digite a segunda nota: ");
+ scanf("%d", &nota2);
+ printf("Digite a última nota: ");
+ scan("%d", &nota3);
+ printf("Digite a frequência: ");
+ scanf("%d", &freq);
+
+media = (nota1 + nota2 + nota3) /3
+printf("A média do aluno é: %f", media);
+
+if (media >6 && freq >75){
+ printf("Aprovado");
+}else{
+ printf("Reprovado");
+}
+return 0;
+
+// || = Ou
