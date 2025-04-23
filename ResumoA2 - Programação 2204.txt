@@ -1,0 +1,44 @@
+Resumo para A2 (?) Programação 22/04
+
+A Linguagem C é Case Sensitive, significa que considera as letras maiúsculas e minúsculas, o nome da função principal deve ser escrito com as letras minúsculos: main. (Main ou MAIN viram erros). int e char devem ser escritas em minúsculo também.
+
+Pi: 3,14...  --  %5.3f
+Raio: 2,0031  --  %5.3f
+Area = 2*pi*raio  --  %5.3f
+
+Operadores de incremento e decremento
+Incrementar de 1 o valor da variável e para fazer isso precisa:
+- Somar 1 ao valor atual da variável;
+- Armazenar o resultado na própria variável.
+Operador sendo: ++, sendo x++ ou ++x e se for para diminuir sendo x--
+
+int a = 5, b = 3;
+int c;
+
+c = a++ + b;  --> a=6, b=3, c=8
+c = ++a + b;  --> a=7, b=3, c=10
+-------------------------------------------------------------------------------------------
+> : Maior que;
+< : Menor que;
+>= : Maior ou igual que;
+<= : Menor ou igual que;
+== : Igual a;
+!= : Diferente de.
+
+&& = "Tabela Verdade E";
+|| = "Tabela Verdade OU";
+! = "Negação NÃO".
+-------------------------------------------------------------------------------------------
+main()
+{
+ int idade;
+ printf("Digite o valor da idade: ");
+ scanf("%d", &idade);
+
+ if(idade < 16){
+ printf("Não pode votar.");
+ }else if (idade >= 16 && idade < 18) || idade > 70){
+ printf("Voto Facultativo.");
+}
+return 0;
+}
