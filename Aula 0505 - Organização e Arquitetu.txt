@@ -1,0 +1,17 @@
+Aula 0505 - Organização e Arquitetura
+
+O que a CPU faz na prática? O processador pega essas instruções, interpreta e executa, fazendo isso na forma de número binários (0 e 1).
+CPU: Unidade Central eu executa instruções e controla processos.
+Núcleos e Threads são multitarefas com múltiplos núcleos simultâneos.
+Memória Cache: L1-> Ultrarrápido.
+L2-> Intermediária.
+L3-> Compartilhada entre núcleos.
+FPU processa cálculos matemáticos complexos em ponto flutuante.
+
+As principais partes de um processador são a UC (Unidade de Controle), ele coordena tudo, dizendo quando e como as instruções devem ser executadas.
+ULA (Unidade Lógica e Aritmética) na qual realiza operações matemáticas e lógicas.
+Registradores são pequenas áreas de armazenamento interno, rápidas.
+Cache é a memória interna ultrarrápida para armazenar dados usados com frequência.
+
+As fabricantes líderes são a Intel e AMD.
+
