@@ -1,0 +1,21 @@
+Resumo A1 - Aplicações para Internet
+
+Parte lógica = Software (Word, Excel, etc);
+Parte física = Hardware (Mouse, Teclado, Placa Mãe).
+
+Web: Internet = Rede Mundial de Computadores (WWW) World Wide Web.
+
+Aplicação Web -> Sites e HTML.
+Sintaxes da Linguagem -> <html> </html> --- <body> </body>
+
+H2: Texto;
+Font: Texto;
+Img Src: Imagens;
+A href: Links;
+Iframe: Vídeos.
+
+<html>
+<!--Aqui é o título>
+<title> Joe Novo </title>
+<body bgcolor="red">
+</body>
