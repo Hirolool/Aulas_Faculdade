@@ -1,0 +1,326 @@
+RESUMO PARA PROVA DE HOJE
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FOR: é uma estrutura de repetição (ou laço de repetição) usada para executar um bloco de código um número determinado de vezes. Ele é especialmente útil quando você sabe antecipadamente quantas vezes deseja que o laço seja executado.
+
+Ex: #include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int resultado;
+    for (int i = 0; i < 10; i++) {
+        resultado = i;
+        printf("Valor de i é = %d\n", resultado);
+        i++;
+}
+    return 0;
+}
+
+Nesse código ele mostra que o valor de resultado irá aumentar de 2 em 2, indo de 0, 2, 4, 6 e 8, não chega ao 10 por que foi escrito que o i < 10, se fosse para chegar ao número 10 deveria colocar um <=, ai ele iria aparecer.
+
+
+int n = 0;
+
+while(n < 100){
+    printf("Valor de n é = %d\n", n);
+    n++;
+}
+
+Nesse código ele mostra todos os números de 0 até 99, mesma coisa que o anterior, se fosse até o 100 deveria colocar <= 100.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OPERADOR % : sendo chamado de módulo ou de resto de divisão inteira, ele retorna o que sobra depois que um número é dividido por outro (De acordo com o exercício 2).
+
+#include <stdio.h>
+
+int main() {
+    int numero;
+
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    if (numero > 0) {
+        printf("O número é positivo.\n");
+    } else if (numero < 0) {
+        printf("O número é negativo.\n");
+    } else {
+        printf("O número é zero.\n");
+    }
+
+    if (numero % 2 == 0) {
+        printf("O número é par.\n");
+    } else {
+        printf("O número é ímpar.\n");
+    }
+
+    return 0;
+}
+Nesse código o Operador % faz com que o número que foi digitado dividido por 2, caso o número não sobre nada na equação, ele é par, se não for o caso e sobre algum número na conta ele retorna como negativo (Modo mais simples do que o anterior de If e Else).
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CONDIÇÃO || = OU
+CONDIÇÃO && = E
+Ambos da tabela verdade que são usadas em alguns códigos, nesse caso se for OU, tudo é V, menos quando ambos são F.
+No caso do E, só é V quando ambos são V, de resto é tudo F.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char, *argv[]) {
+ int nota1, nota2, nota3, media, freq;
+
+ printf("Digite a primeira nota: ");
+ scanf("%d", &nota1);
+ printf("Digite a segunda nota: ");
+ scanf("%d", &nota2);
+ printf("Digite a última nota: ");
+ scan("%d", &nota3);
+ printf("Digite a frequência: ");
+ scanf("%d", &freq);
+
+media = (nota1 + nota2 + nota3) /3
+printf("A média do aluno é: %f", media);
+
+if (media >6 && freq >75){
+ printf("Aprovado");
+}else{
+ printf("Reprovado");
+}
+return 0;
+
+Nesse código o usuário digita as 3 notas dele em sequência, depois a sua frequência, o programa faz a média sendo a soma das três notas e o resultado sendo dividido por 3, formando a média, após isso, caso ele tenha a média maior que 6 E a frequência maior que 75, ele é aprovado, caso alguma dessas esteja menor que 6 ou menor que 75, ele é reprovado.
+Se fosse com ||, qualquer um dos dois sendo maior que o que foi escrito, o usuário será aprovado.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+EQUAÇÕES E VARIAVEIS
+int main(int argc, char *argv[]) {
+	
+	printf("Giovanni Paulo \t");
+	printf("CALABRESA COM QUEIJO \n");
+	printf("Oxes \n");
+	
+	int a, b; //Variavel soma para a soma (dah)
+	a = 69;
+	b = 22;
+	//soma = a+b;
+	//multiplica = a*b;
+	//subtrai = a-b;
+	//divide = a/b;
+	printf("Primeiro numero digitado: %d \n" , a );
+	printf("Segundo numero digitado: %d \n", b);
+	printf("Soma dos dois numeros: %d \n", a+b); //Pode alterar o "a+b" por soma
+	//printf("Soma de: %d, com %d igual a %d", a,b,soma);
+	printf("Multiplicacao dos dois: %d \n", a*b);
+	printf("Subtracao dos dois: %d \n", a-b);
+	printf("Divisao dos dois: %d \n", a/b);
+	
+	int inteiro = 11;
+	float flutuante = 2.73;
+	double real = 3.141516;
+	char texto = 'A';
+	
+	printf("inteiro %d\n", inteiro);
+	printf("flutuante %f\n", flutuante);
+	printf("real %f\n", real);
+	printf("texto %c\n", texto);
+	return 0;
+}
+Aqui as explicações básicas do material de C, inteiro, float, como escrever linha de código. Lembrando que número int não mostra , 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SWITCH E BREAK: O switch é uma estrutura de seleção múltipla que escolhe qual bloco de código executar com base no valor de uma variável, já o Break serve para encerrar o switch imediatamente, sem o break, o código continua executando os próximos case.
+
+#include <stdio.h>
+
+int main() {
+    int opcao;
+    float num1, num2, resultado;
+
+    printf("Digite o primeiro número: ");
+    scanf("%f", &num1);
+
+    printf("Digite o segundo número: ");
+    scanf("%f", &num2);
+
+    printf("\nEscolha operação:\n");
+    printf("1 - Soma\n");
+    printf("2 - Subtração\n");
+    printf("3 - Multiplicação\n");
+    printf("4 - Divisão\n");
+    printf("Opção: ");
+    scanf("%d", &opcao);
+
+    switch (opcao) { //switch (3) fara com que sempre seja a mesma opção, no caso a multiplicação.
+        case 1:
+            resultado = num1 + num2;
+            printf("Resultado da soma: %.2f\n", resultado);
+            break;
+        case 2:
+            resultado = num1 - num2;
+            printf("Resultado da subtração: %.2f\n", resultado);
+            break;
+        case 3:
+            resultado = num1 * num2;
+            printf("Resultado da multiplicação: %.2f\n", resultado);
+            break;
+        case 4:
+            if (num2 != 0) {
+                resultado = num1 / num2;
+                printf("Resultado da divisão: %.2f\n", resultado);
+            } else {
+                printf("Erro: divisão por zero.\n");
+            }
+            break;
+        default:
+            printf("Opção inválida.\n");
+            break;
+    }
+
+    return 0;
+}
+Tendo as opções de equações, o Switch faz com que você escolha um desses casos, caso seja o 1 (soma) ele faz a soma que foi atribuída no código e mostra, o break seria o que finaliza essas cases (TALVEZ NÃO CAIA).
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+VETOR: Um vetor é uma coleção de variáveis do mesmo tipo, armazenadas de forma sequencial na memória. Começando sempre pelo 0, indo até o número proposto (ex: i > 5, 0,1,2,3,4)
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void mostrarVetorOrdenado(int vetor[], int tamanho) {
+    printf("\nVetor ordenado em ordem crescente:\n");
+    for (int i = 0; i < tamanho; i++) {
+        printf("vetor[%d] = %d\n", i, vetor[i]);
+    }
+}
+
+int main()
+{
+    // Declarar e preencher vetor com 5 inteiros
+    int vetor[5] = {12, 5, 20, 8, 15};
+
+    printf("Valores do vetor:\n");
+    // Acessar valores do vetor com índice
+    for (int i = 0; i < 5; i++) {
+        printf("vetor[%d] = %d\n", i, vetor[i]);
+    }
+
+    // Encontrar o maior valor do vetor
+    // 0 = 12;
+    // 1 = 5;
+    // 2 = 20;
+    // 3 = 8;
+    // 4 = 15.
+    int maior = vetor[0];
+    for (int i = 1; i < 5; i++) {
+        if (vetor[i] > maior) {
+            maior = vetor[i];
+        }
+    }
+    printf("\nMaior valor do vetor: %d\n", maior);
+
+    printf("\n");
+
+    // Inserir os valores com scanf
+    printf("Digite 5 números inteiros:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Valor %d: ", i + 1);
+        scanf("%d", &vetor[i]);
+    }
+
+    // Ordenar o vetor (Bubble Sort)
+    for (int i = 0; i < 5 - 1; i++) {
+        for (int j = 0; j < 5 - 1 - i; j++) {
+            if (vetor[j] > vetor[j + 1]) {
+                // Troca os valores
+                int temp = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1] = temp;
+            }
+        }
+    }
+
+    // Mostrar vetor ordenado
+    mostrarVetorOrdenado(vetor, 5);
+
+    return 0;
+}
+Nesse código, o Vetor armazena 5 números nele, aleatórios, tem três códigos, um aonde ele vai comparando os números entre eles (qual é maior) e vai analisando cada um deles, até chegar até um que é o principal, sendo esse 20, tem outro aonde ele vai armazenando os números, os compara, caso esse número seja menor que o primeiro analisado, ele guarda esse mais alto, avança o mais baixo e vai continuando assim até terminar os 5, ela armazena esses números como em uma "mesa" você só pode analisar dois por vez, pega um, analisa com o outro, caso maior, coloca nessa mesa e avança o menor, pega o próximo número, analisa, e vai continuando assim, tudo isso com o Bubble Sort.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TABELA VERDADE
+"E"
+V V = V
+V F = F
+F V = F
+F F = F
+
+"OU"
+V V = V
+V F = V
+F V = V
+F F = F
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+VOTAÇÃO (Exemplo)
+> : Maior que;
+< : Menor que;
+>= : Maior ou igual que;
+<= : Menor ou igual que;
+== : Igual a;
+!= : Diferente de.
+
+&& = "Tabela Verdade E";
+|| = "Tabela Verdade OU";
+! = "Negação NÃO".
+
+main()
+{
+ int idade;
+ printf("Digite o valor da idade: ");
+ scanf("%d", &idade);
+
+ if(idade < 16){
+ printf("Não pode votar.");
+ }else if (idade >= 16 && idade < 18) || idade > 70){
+ printf("Voto Facultativo.");
+}
+return 0;
+}
+Nesse código, é usado a tabela verdade do E AO MESMO TEMPO a do OU, ela usa isso aqui com parênteses para uma operação e o OU para a outra, sendo que idade maior ou igual a 16 E TAMBÉM a idade sendo menor que 18 pode votar e depois de conferir esses dois ele vê o OU caso a pessoa tenho menos de 70 anos.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int a = 2;
+float b = 3;
+float c = 4;
+float resultado;
+resultado = b*c/a;
+printf("resultado: %2f\n", resultado); // 6
+resultado = (b*c)/a;
+printf("resultado: %2f\n", resultado); // 6
+resultado = b+b/a;
+printf("resultado: %2f\n", resultado); //4,5
+
+Os resultados das printf estão ao lado como comentários.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+for(int i = 1; i < 4; i++){
+    for(int j = 1; j < 4; j++){
+        printf(" (%02d, %02d)", i,j);
+    }
+    printf("\n");
+}
+// (1,1) - (1,2) - (1,3)
+// (2,1) - (2,2) - (2,3)
+// (3,1) - (3,2) - (3,3)
+
+Nesse código as coisas são mais complicadas com o for, na parte do j, ele vai reiniciar até chegar no 1,3. Pois só atribui até j < 4, quando faz isso, o programa "reinicia" indo para a variável i, aumentando 1 dela, sendo a próxima linha 2,1 e o j faz o mesmo, seguindo para 2,2 e 2,3 e mesma coisa acontece pela última vez, 3,1 / 3,2 e 3,3, depois disso o programa encerra.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+int x = 0;
+do{
+    printf("valor de X: %d", x);
+    x = x + 2;
+    printf("\n");
+}while(x < 6);
+// 0, 2, 4.
+Aqui é simples, o do e while faz com que o programa mostre os números 0,2 e 4 até o 6, mas por não ser <= ele não irá mostrar o 6, só o número anterior a ele, esse sendo 4. Sendo Do e While um "FAÇA E ATÉ"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+float nota = 6;
+float presenca = 60;
+if (nota >=6 || presenca >=75){
+    printf("ALUNO APROVADO");
+}else{
+    printf("ALUNO REPROVADO");
+}
+Mesmo caso de OU com || e da média anterior, nesse caso sendo com a Tabela Verdade do OU e não do E, como é OU, se uma for F, não há diferença, menos se ambas forem F, ai sim ela é reprovada.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
