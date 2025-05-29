@@ -1,0 +1,10 @@
+RESUMO PROVA DE HOJE (Versão 2.0)
+Margaret Heafield Hamilton é uma cientista da computação, engenheira de software e empresária estadunidense. Foi diretora da Divisão de Software no Laboratório de Instrumentação do MIT, que desenvolveu o programa de voo usado no projeto Apollo 11, a primeira missão tripulada à Lua. (Engenharia de Software e Modelagem). E o grande Alan Turing, pai da ciência da computação.
+------------------------------------------------------------------------------------------------
+TDD: "Test-Driven Development" (Desenvolvimento Orientado a Testes), um método de desenvolvimento de software onde os testes são escritos antes do código que será testado.
+------------------------------------------------------------------------------------------------
+Modelo Cascata: Requisito do Sistema -> Requisito do Software -> Análise -> Design do Programa -> Programação -> Testes -> Operações. Caso falhe algo na área de teste, retornar no Design e caso persista, nos Requisitos.
+------------------------------------------------------------------------------------------------
+Uma história de usuário é uma descrição breve, informal e em linguagem simples de uma funcionalidade que um usuário precisa para obter valor de um produto de software.
+------------------------------------------------------------------------------------------------
+Um diagrama de fluxo (também conhecido como fluxograma) é uma representação visual de um processo, sistema ou algoritmo. Ele usa formas geométricas e flechas para mostrar as etapas e decisões de um processo de forma clara e sequencial. Por outro lado, um diagrama de classe (em UML) modela a estrutura e as relações entre as classes (ou entidades) de um sistema, mostrando seus atributos, métodos e as ligações entre elas. 
