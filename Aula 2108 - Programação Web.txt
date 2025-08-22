@@ -1,0 +1,79 @@
+Aula 2108 - Programação Web
+
+Introdução aos conceitos:
+- Frontend (HTML, CSS);
+- Backend (Dinâmico, atualiza informações, interação com banco de dados).
+
+Como funciona a Web?
+Arquitetura Cliente-Servidor
+  Cliente (Navegador) --> Requisição HTTP
+  Servidor (PHP + Apache) --> Resposto HTML
+   Cliente (exibe página)
+
+FRONTED:
+- Executa no navegador;
+ - Interface do usuário;
+  - HTML + CSS + JS;
+    - Não acessa banco de dados.
+
+BACKEND:
+- Executa no servidor;
+ - Lógica do negócio;
+  - PHP + MySQL;
+   - Acessa banco de dados.
+
+O QUE É PHP?
+ PHP: Hypertext Preprocessor.
+  Ela é uma linguagem de programação para criar sites dinâmicos.
+
+CARACTERÍSTICAS PRINCIPAIS:
+- Fácil de aprender;
+ - Gratuito e OpenSource;
+  - Integra com HTML;
+   - Conecta com Banco de Dados.
+
+EXEMPLO DE CÓDIGO PHP:
+
+<? php
+ $nome = "Maria";
+ echo "Olá, $nome!";
+?>
+
+int = 1
+float = 3.14
+bool = true
+string.
+
+XAMPP - Nosso ambiente de desenvolvimento
+
+XAMPP (Acrônimo)
+X --> Cross Plataform (Windows/Linux/Mac);
+A --> Apache (Servidor Web);
+M --> MySQL (Banco de Dados);
+P --> PHP (Linguagem);
+P --> Perl (Outra linguagem).
+
+Estrutura de postos:
+C:\xampp\htdocs  <-- Os projetos ficam aqui! (Path)
+
+|-JogosLegais /
+ |--index.php
+ |--script.js
+
+O QUE É API?
+API (Application Programming Interface)
+ Funciona como "garçom" entre o frontend e o backend. Permitem que as aplicações se comuniquem entre através de regras e formatos definidos. 
+
+REST (Representational State Transfer)
+ É um estilo de arquitetura para API's. Define como organizar/acessar recursos usando métodos HTTP:
+- GET;
+- POST;
+- PUT;
+- DELETE.
+
+JSON (Javascript Object Notation)
+ Formado de dados leve e legível usado para trocar informações entre frontend e backend.
+Exemplo:
+
+{"nome" : "João",
+"idade" : 28}                  (Dicionário Python)
