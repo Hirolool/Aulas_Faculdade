@@ -1,0 +1,11 @@
+Aula 2208 - Sistemas Operacionais
+
+ Um sistema operacional é um sistema que opera todas as funções do seu computador ou dispositivo. Seu principal objetivo é gerenciar os componentes de hardware, como processador, memória principal, discos, teclado, entre outros e fornecer aos programas do usuário uma interface com o hardware mais simples de ser usada.
+ Então, é o sistema operacional que faz a ponte entre você e sua máquina, seja ela um computador, notebook, celular, tablet, ou até mesmo um console de videogame.
+
+EVENTOS ASSÍNCRONOS
+
+ A principal diferença existente entre softwares aplicativos e um sistema operacional convencional está no fato de que os dois funcionam de formas diferentes. Enquanto um software aplicativo (Microsoft Word, Excel, Photoshop e ETC.) trabalham com início, meio e fim, um sistema operacional trabalha de forma assíncrona, ou seja, suas rotinas são executadas de forma concorrente através de eventos assíncronos (que podem ocorrer a qualquer momento).
+
+DIFERENÇA ENTRE 32 E 64 BITS
+ A principal diferença está em poder processar uma quantidade maior de dados. Usualmente, processadores com 32 bits costumam ser mais antigos e lentos.
