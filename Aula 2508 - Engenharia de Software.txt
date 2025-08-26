@@ -1,0 +1,36 @@
+Aula 2508 - Engenharia de Software
+
+
+Representações Abstratas do Sistema: Modelagem de software cria abstrações oara facilitar o entendimento do sistema.
+Facilita Entendimento e Comunicação: Modelagem ajuda na comunicação clara entre equipe e clientes.
+Redução da Complexidade: Modelagem reduz a complexidade dos sistemas para melhor análise.
+Alinhamento de Expectativas: Modelo alinha expectativas entre equipe técnica e clientes.
+
+Principais modelos e paradigmas:
+- Modelo Orientado a Objetos: Foca na organização do sistema em objetos que combinam dados e comportamentos para melhor modularidade.
+- Modelo Estruturado: Utiliza processos e fluxos de dados para descrever funcionalidades do sistema de forma sequencial e clara.
+- Modelo Baseado em Componentes: Divide o sistema em componentes reutilizáveis que facilitam manutenção e escalabilidade.
+
+- Identificação precoce de erros: A modelagem ajuda a detectar erros logo no início, reduzindo custos e retrabalho no desenvolvimento.
+- Melhora na comunicação: Modelos facilitam o entendimento entre equipes, alinhando expectativas e objetivos e previsível.
+- Facilitação no planejamento: Modelagem auxilia no planejamento detalhado, tornando o processo mais organizado a previsível.
+- Documentação atualizada: Modelos mantêm a documentação do projeto atualizada, garantido fácil acesso e compreensão.
+
+Modelos estruturais: Diagramas de classe e objetos:
+- Diagramas de Classe: Diagramas de classe mostram a estrutura estática do sistema com classes, atributos e relações.
+- Diagramas de Objetos: Diagramas de objetos representam instâncias específicas das classes em um determinado momento.
+- Diagramas de Sequência: Representam a interação entre objetos para detalhar mensagens e eventos no sistema.
+- Diagramas de Atividades: Visualizam fluxos de trabalho e processos para facilitar a compreensão do comportamento do sistema.
+
+Processo de elicitação (Coletar dados em um sistema) e documentação de requisitos:
+- Coleta de Informações: Requer a obtenção detalhada de informações dos stakeholders para entender suas necessidades e expectativas.
+- Análise e Organização: Os requisitos são analisados e organizados para garantir clareza e coerência no projeto.
+- Formalização dos Requisitos: Os requisitos são documentos formalmente para fácil compreensão e uso para todos os envolvidos.
+
+Uso de modelagem para validar especificações:
+- Simulação de Componentes do Sistema: Modelar permite simular o comportamento do sistema e prever resultados antes da implementação.
+- Validação de Requisitos: A modelagem ajuda a garantir que os requisitos do sistema estejam completos e corretos.
+
+Principais desafios enfrentados pelos profissionais: 
+- Complexidade Crescente dos Sistemas: Sistemas ficam cada vez mais complexos.
+
