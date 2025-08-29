@@ -1,0 +1,206 @@
+Dia 2908 - Sistemas Operacionais
+
+Memória RAM (Random Access Memory) é um tipo de memória volátil utilizada em
+computadores e outros dispositivos eletrônicos. Ela serve como uma área de
+armazenamento temporário onde os dados e programas em uso são carregados para
+que o processador possa acessá-los rapidamente.
+
+▪ Aqui estão algumas funções principais da memória RAM:
+1. Armazenamento Temporário: A RAM armazena informações de forma temporária
+enquanto o computador está ligado. Quando o computador é desligado, os dados na
+RAM são apagados.
+
+2. Velocidade de Acesso: A RAM permite que o processador acesse dados rapidamente, o
+que melhora a performance do sistema. Quanto mais RAM um computador tem, mais
+aplicações ele pode executar simultaneamente sem lentidão.
+
+3. Execução de Programas: Quando você abre um programa, ele é carregado da unidade
+de armazenamento (como um disco rígido ou SSD) para a RAM, permitindo que o
+processador execute as instruções com eficiência.
+
+4. Multitarefa: A RAM permite que o computador execute várias tarefas ao mesmo
+tempo, armazenando informações de diferentes aplicativos que estão sendo usados ao
+mesmo tempo.
+▪ Em resumo, a memória RAM é essencial para o funcionamento eficiente de um
+computador, pois facilita a execução de programas e o gerenciamento de tarefas em
+tempo real.
+
+Execução
+- Memória Principal: Onde os dados e programas em uso são armazenados.
+- Volátil: Perde todo o conteúdo quando o computador é desligado.
+- Leitura e Escrita: Acessível para ler e gravar dados rapidamente.
+- Carrega os Softwares: Responsável por carregar e executar os programas em uso.
+- Capacidade: Medida em gigabytes (GB), como 2 GB, 4 GB e 8 GB.
+- Frequência: Medida em megahertz (MHz), como 1066 MHz, 1333 MHz e 2133 MHz.
+
+A imagem também mostra a evolução da tecnologia: DRAM (Dynamic Random-Access Memory) e, mais especificamente, DDR4 (Double Data Rate 4).
+
+
+De quanta memória RAM você precisa?
+- 4 GB:
+Navegação web normal
+Uso de aplicativos básicos
+Ideal para estudantes
+
+- 8 GB:
+Multitarefa pesada
+Jogos leves
+Mínimo necessário para PCs de trabalho
+
+- 16 GB:
+Jogos normais
+Edição de vídeo leve
+Mínimo necessário para a maioria dos programadores
+
+- 32 GB:
+Jogos mais pesados
+Edição de vídeo intensiva
+Programação e design 3D profissionais
+
+Quando o sistema operacional é carregado no boot, a memória ram é separada em “blocos” e processos:
+O principal processo é o do SO, seguindo as demais aplicações:
+- Base = Início do processo
+- Limite = Tamanho do processo
+
+
+ A memória ROM, sigla no inglês para “memória somente de leitura”, é um tipo de memória que, como o próprio nome sugere, permite apenas a leitura de dados e não a escrita. Isso porque suas informações são gravadas pelo fabricante uma única vez e não podem ser alteradas ou apagadas, somente acessadas, sendo classificadas como memória não volátil.
+ Ao contrário da memória RAM, que perde dados quando a energia é removida, a memória ROM consegue armazenar firmwares ou pequenos softwares que funcionam apenas em um hardware específico.
+ A BIOS do computador, por exemplo, é uma memória ROM, pois ela fica responsável por carregar as configurações básicas antes de inicializar o sistema operacional, verificando todos os componentes para só então iniciar o HD/SDD que “acordará” o computador.
+
+
+A memória cache é um tipo de memória de alta velocidade que armazena temporariamente dados e instruções que o processador usa com frequência. Ela é projetada para acelerar o acesso a dados, reduzindo o tempo necessário para que o processador acesse informações armazenadas na memória RAM ou em outros tipos de
+armazenamento.
+ Aqui estão algumas características e funções da memória cache:
+- 1. Localização: A memória cache é geralmente integrada ao próprio processador ou 
+localizada muito próxima a ele. Isso permite um acesso extremamente rápido.
+
+- 2. Níveis de Cache: A memória cache é dividida em diferentes níveis (geralmente L1, L2 e
+L3):
+- L1 Cache: É a mais rápida e menor, localizada dentro do núcleo do processador. É usada para armazenar dados e instruções que o processador usa imediatamente.
+- L2 Cache: É maior que a L1, mas um pouco mais lenta. Pode ser compartilhada entre núcleos de processadores em alguns casos.
+- L3 Cache: É maior e mais lenta em comparação com L1 e L2, e é frequentemente compartilhada entre todos os núcleos de um processador.
+
+- 3. Velocidade: A memória cache opera em velocidades muito mais altas do que a RAM, o
+que significa que os dados podem ser recuperados rapidamente. Isso é crucial para o
+desempenho do computador, especialmente em tarefas que exigem processamento intensivo.
+
+- 4. Eficiência: Ao armazenar dados que são frequentemente acessados, a memória cache
+ajuda a reduzir a quantidade de acesso à RAM, aumentando a eficiência geral do
+sistema.
+
+
+Memória - Armazenamento
+Massa - Secundária - Auxiliar
+HD - DISCO RÍGIDO
+Vantagens:
+- Maior capacidade
+- Menor custo
+
+Desvantagens:
+- Menor velocidade
+- Menor resistência
+- Maior consumo
+Capacidade: 500 GB - 3 TB
+
+
+SSD - Solid State Drive (Flash)
+Vantagens:
+- Maior velocidade
+- Maior resistência
+- Menor consumo
+
+Desvantagens:
+- Menor capacidade
+- Maior custo
+Capacidade: 64 GB / 128 GB
+
+
+Registradores de um processador são pequenas unidades de armazenamento de dados localizadas dentro do processador(CPU). Eles são usados para armazenar temporariamente dados e instruções que o processador precisa enquanto está executando tarefas. Os registradores são muito mais rápidos que a memória RAM, o que permite que a CPU acesse e
+processe informações rapidamente.
+ Existem diferentes tipos de registradores, incluindo:
+- 1. Registradores de uso geral: Podem armazenar dados temporários e resultados intermediários de operações.
+- 2. Registradores de controle: Armazenam informações que controlam o fluxo de execução do programa, como contadores de programa ou indicadores de status.
+- 3. Registradores de dados: Usados especificamente para operações de dados durante cálculos.
+
+
+O NTFS (New Technology File System) e o FAT32 (File Allocation Table 32) são dois sistemas de arquivos usados para organizar e gerenciar dados em dispositivos de armazenamento. Conheça as principais diferenças entre eles:
+
+- 1. Capacidade de Armazenamento
+FAT32: Suporta um tamanho máximo de arquivo de 4 GB e partições de até 8 TB. Por isso, não é ideal para arquivos grandes, como vídeos em alta definição.
+NTFS: Permite arquivos e partições de tamanhos muito maiores, sendo a escolha ideal para discos rígidos modernos e o armazenamento de grandes volumes de dados.
+
+- 2. Recursos de Segurança
+FAT32: Não oferece recursos avançados de segurança ou permissões de arquivo. Todos os usuários têm acesso igual aos arquivos.
+NTFS: Possui suporte para permissões de arquivo e criptografia, dando mais controle sobre quem pode acessar e modificar arquivos e pastas.
+
+- 3. Registro de Log
+FAT32: Não tem um sistema de registro de log para recuperação de erros, o que pode dificultar a recuperação de dados em caso de falha.
+NTFS: Inclui um sistema de registro de log que ajuda a recuperar dados após falhas, melhorando a integridade do sistema de arquivos.
+
+- 4. Desempenho
+FAT32: Pode ser mais rápido em dispositivos menores, mas seu desempenho tende a diminuir em grandes volumes de armazenamento.
+NTFS: Oferece melhor desempenho em discos rígidos grandes e com muitos arquivos, especialmente com recursos como a indexação.
+
+- 5. Compatibilidade
+FAT32: É muito compatível com diversos sistemas operacionais, como Windows, macOS, Linux e consoles de videogame. É a melhor opção para dispositivos que precisam ser usados em várias plataformas.
+NTFS: É usado principalmente em sistemas Windows. Embora macOS e Linux possam ler discos NTFS, a gravação de arquivos pode ser limitada ou exigir softwares adicionais.
+
+
+A razão pela qual 1 terabyte (TB) é frequentemente considerado como 1024 gigabytes (GB) está ligada ao sistema binário, que é a base da forma como os computadores medem e processam dados.
+ Sistema Binário:
+Os computadores operam com base em potências de 2. Nesse sistema, as unidades de armazenamento são calculadas da seguinte forma:
+
+1 kilobyte (KB) = 2*10 bytes = 1024 bytes
+
+1 megabyte (MB) = 2*10 KB = 1024 KB
+
+1 gigabyte (GB) = 2*10 MB = 1024 MB
+
+1 terabyte (TB) = 2*10 GB = 1024 GB
+
+ Sistema Decimal:
+No entanto, em contextos de marketing e em especificações de produtos, como discos rígidos e pen drives, é comum o uso do sistema decimal, que se baseia em potências de 10:
+- 1 terabyte (TB) = 1000 gigabytes (GB)
+
+Conclusão
+A confusão acontece porque o sistema binário (usado em computação) e o sistema decimal (usado em marketing) aplicam diferentes métodos de cálculo para as unidades de armazenamento.
+Apesar da indústria de armazenamento estar migrando cada vez mais para o sistema decimal, tradicionalmente, na ciência da computação, 1 TB é considerado 1024 GB. É importante saber qual sistema está sendo utilizado para evitar mal-entendidos.
+
+Em TI, um arquivo é um conjunto de dados ou informações que é armazenado em um dispositivo de armazenamento, como um disco rígido, uma unidade flash ou na nuvem. Os arquivos podem conter diversos tipos de dados, incluindo texto, imagens, áudio, vídeo e muito mais.
+
+
+Principais Tipos de Arquivos
+- Compactadores (compressão de arquivos):
+.zip: Extensão do Winzip, muito comum.
+.rar: Formato amplamente usado, considerado por muitos superior ao ZIP.
+.7z: Formato novo com alta compressão. Possui arquitetura aberta e é flexível.
+
+- Documentos:
+.txt: Arquivos de texto simples, leves e universais.
+.doc ou .docx: Arquivos de texto do Microsoft Word.
+.xls ou .xlsx: Planilhas eletrônicas do Microsoft Excel.
+.ppt ou .pptx: Apresentações de slides do Microsoft PowerPoint.
+.pdf: Padrão para proteção e portabilidade de documentos, criado pela Adobe.
+.rtf: Formato de texto rico da Microsoft, para intercâmbio entre aplicativos.
+.odf: Formato aberto para documentos de escritório, como textos e planilhas.
+
+- Imagens:
+.bmp: Imagem "crua" sem compressão. O tamanho do arquivo é maior.
+.gif: Permite pequenas animações e fundo transparente.
+.jpg ou .jpeg: Comprime a imagem para torná-la muito mais leve.
+.png: Também permite animações e fundo transparente. O formato surgiu devido a questões de patente do GIF.
+.svg: Gráfico vetorial bidimensional. Não perde definição ao ser redimensionado.
+
+- Áudio:
+.wav: Áudio digital sem compressão.
+.mp3: Áudio digital com alta compressão (até 90%), eliminando frequências imperceptíveis.
+.wma: Formato da Microsoft, equivalente ao MP3.
+.aac: Formato da Apple. Compete com MP3 e WMA, oferecendo melhor qualidade com tamanho menor.
+
+- Vídeo:
+.avi: Formato de vídeo da Microsoft, usado para combinar áudio e vídeo.
+.mpg: Um dos padrões de compressão de áudio e vídeo, criado pelo Moving Picture Experts Group.
+.mov: Formato de mídia usado pelo QuickTime (Apple).
+.mkv: Formato aberto que evolui para atender às necessidades dos desenvolvedores. Usado para vídeos de alta definição.
+Executável
+.exe: O próprio programa. O sistema operacional aloca memória para ele. Também existem outras extensões executáveis como .BAT e .COM.
