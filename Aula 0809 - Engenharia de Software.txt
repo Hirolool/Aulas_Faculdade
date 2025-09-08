@@ -1,0 +1,24 @@
+Aula 0809 - Engenharia de Software
+
+Agenda Pró - No Show e Pequenos Negócios
+
+ 1- Impactos: - Perda de receita (Slot ocioso);
+- Ociosidade profissional;
+- Insatisfação dos clientes.
+
+ 2- Causas: - Esquecimento pelo cliente;
+- Dificuldade de cálculos (?);
+[Possui mais coisas como a rega 3- Soluções, mas a letra dele está horrível de se entender.]
+
+- Elicitação (Elicitação é o ato de extrair ou obter informações, ideias ou respostas de alguém, sendo mais utilizada no contexto de elicitação de requisitos, onde se busca descobrir as necessidades dos usuários e do negócio para o desenvolvimento de um sistema ou projeto.);
+
+- Regra de negócio (Uma regra de negócio é uma diretriz ou condição que uma organização define para guiar suas operações, processos e decisões, especificando o que deve ser feito em situações específicas para garantir consistência e eficiência.);
+
+- Requisitos Funcionais (Requisitos funcionais descrevem "o que o sistema deve fazer", detalhando as ações, comportamentos e funcionalidades que um sistema deve realizar para atender às necessidades do negócio e dos usuários. Em essência, são as funções que o software oferece, como inserir dados, realizar pesquisas, consultar informações, efetuar transações e gerar relatórios. Eles são fundamentais para garantir que o software atenda ao propósito pretendido e sirva como guia para o desenvolvimento e teste do sistema.);
+
+- Requisitos Não Funcionais (Requisitos não funcionais (RNFs) definem os atributos de qualidade e restrições de um sistema, descrevendo como uma função deve ser executada em vez de o que a função faz. Eles englobam características como segurança, desempenho, usabilidade, confiabilidade e escalabilidade, que são essenciais para a qualidade e aceitação do software. Diferem dos requisitos funcionais por detalharem as qualidades do sistema e a experiência do usuário, e não as funcionalidades específicas do software.).
+
+AS - IS -> Como é hoje?
+To - BE -> Como será?
+
+Stakeholders: Stakeholders são todas as pessoas, grupos ou entidades que têm um interesse direto ou indireto nas atividades de uma organização, projeto ou iniciativa, ou que podem ser afetados por elas. Eles incluem partes internas, como funcionários e acionistas, e externas, como clientes, fornecedores, comunidades, e até mesmo concorrentes e grupos normativos. O gerenciamento eficaz dos stakeholders, considerando suas necessidades e expectativas, é crucial para o sucesso e a sustentabilidade de qualquer negócio. 
