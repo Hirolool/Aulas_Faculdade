@@ -1,0 +1,20 @@
+Dia 24/02/2026 - Programação Orientada a Objeto
+(Não existe "melhor linguagem de programação", depende do caso que for usado e pra quem.)
+
+Visão Geral: Lógica à Arquitetura Conectada
+A Base: Trilha Principal - Java 17 (Foco em Programação Orientada a Objeto, POO) e a sua Metodologia é prática semanal e certificação
+O Processo: Construção - Sistemas robustos e escaláveis e uma arquitetura por pacotes
+O Objetivo (Prize): Projeto Integrador IoT 4.0 - Hardware: ESP32 + Sensor MPU6050 e Cloud MQTT + Java + Banco de Dados
+
+O Paradigma> Modelando o Mundo Real em Software:
+- Os Objetos são constituidos de Dados (Atributos) e Código (Métodos), existem mais funções como a Abstração (Simplificar a realidade), a Herança (Reutilizar comportamento), o Encapsulamento (Proteger os dados) e por fim o Polimorfismo (Múltiplas formas, uma interface)
+
+Python, vantagens: Sintaxe limpa, tipagem dinâmica e versatilidade (com IA e Data Science) e seu Trade-Off é com perfomance (Interpretada), GIL e Consumo de memória.
+
+Java, vantagens: Robustez (Tipagem estética), Perfomance (JIT Compiler) e Escabilidade e seu Trade-Off é com Verbosidade (Boilerplate), Curva de aprendizado mais rigorosa.
+
+Pode se usar o VsCode para os códigos em Java, mas o mais otimizado é o IntelLLij (Ou Jetbrains para Java) e precisa modificar muitas coisas para a codificação do Java no VsCode. (Versão 2021.32 a interface é mais interessante).
+
+Banco de Dados da Oracle para os projetos.
+
+C:\Program Files\Java\jdk-21.0.10\bin
