@@ -1,0 +1,21 @@
+Dia 26/02/2026 - Inicialização do Sistema: Análise e Projeto de Sistemas I
+
+Conceitos de Engenharia de Software, com seus métodos e ferramentas, na sua aplicação o Desenvolvimento de Sistemas de Informação e por fim, na entrega será um Documento de Especificação de Software.
+
+Concepção -> Pré-Projeto -> Planejamento Estratégico -> Desenvolvimento e Cronograma
+
+Concepção: Gerenciamento, elaboração e apresentação dos conceitos do projeto, além da definição dos objetivos.
+Desenvolvimento: Definição da metodologia, estruturação do cronograma e por fim o Desenvolvimento do Projeto.
+
+Fundamentos: O problema humano ser transformado em uma solução digital e prática.
+Gerenciamento: O equilíbrio entre escopo, prazo e custo e o mais essencial que seria a qualidade do software.
+Elaboração: Desenvolver sobre a definição do sistema, como "O problema", "O público-alvo" e "O contexto".
+Formalização: Documentação com a estruturação do texto, contextualização do cenário e a motivação do projeto.
+Fronteiras: Funcionalidades, o que o sistema faz ou não faz, os recursos, módulos, limitações técnicas, exclusões, etc.
+Valor: O estado atual (Problema) <--> O sistema que está sendo proposto <--> Estado Futuro (Benefícios do projeto para o estado atual).
+Direção: Objetivo Geral, Específicos e Metas Mensuráveis. (EX: Objetivo Geral: Aplicação para estudos -> Objetivo Específico: Ser programado em JAVA).
+Processo: Escola da Metodologia entre Tradicional e Ágil, além de definir as etapas e listar as ferramentas utilizadas, tudo isso sendo a decisão mutua entre a equipe.
+Planejamento: O Cronograma com data fase, marco e entrega prevista.
+Engenharia: Lista de requisitos, Estrutura do Sistema e Modelagem Inicial com os Diagramas podendo ser usados.
+
+Google Acadêmico para referências bibliográficas.
