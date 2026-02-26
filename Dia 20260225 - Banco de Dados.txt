@@ -1,0 +1,61 @@
+Dia 25/02/2026 - Banco de Dados
+
+Compreender modelos de banco de dados e arquitetura de Sistemas Gerenciadores de Banco de dados (SGBD's), sendo dois que vão ser usados, o MySQL WB e o Oracle XE e o FreeSQL e para o aprendizado de Modelagem e da Normalização, um bom aplicativo é o brModelo, resolver problemas analíticos via código, projetar sistemas integrados e expressar soluções em linguagem de programação.
+Fundamentos e Modelagem -> Abordagem Relacional e Normalização -> SQL: Construção e Manipulação -> Administração e Performance -> Projeto Final.
+
+O Panorama do Mercado:
+- Papéis Importantes: DBA (Administração) e Desenvolvedor (Criação);
+- Tecnologias: Relacional, NoSQL e NewSQL;
+- Fundamentos e Arquitetura: Conceito> Dados e Informação. Instância e Banco, Catálogo e Metadados.
+
+ Modelagem Conceitual (MER)
+- Entidades: Seriam os objetos reais da tabela (Geralmente ilustrados como retângulos);
+- Relacionamentos: Seriam as ações que envolvem as entidades (Geralmente ilustrados por losango);
+- Atributos: Seriam as características ou propriedades das entidades (Geralmente ilustrada com uma forma oval OU como descrição das entidades).
+- Chave Primária (PK): Ela é um identificador único e obrigatório (NOT NULL) e exclusivo.
+- Chave Estrangeira (FK): O elo de ligação, referencia a PK de outra tabela.
+- Chave Surrogada (Surrogate): ID atificial numérico criado pelo sistema (EX: ID_Log = 1, 2, 3...).
+
+Normalização: Processo matemático para evitar anomalias e dependências funcionais.
+
+Manipulação de Dados (DML):
+- Insert: Carga Inicial e scripts de inserção;
+- Update: Atualização de registros existentes;
+- Delete: Remoção com verificação de integridade.
+
+Consultas Profissionais (DQL)
+1- Select Avançado;
+2- Funções Agregadas (COUNT, SUM, AVG);
+3- GROUP BY & HAVING;
+4- Subqueries e Consultas Aninhadas.
+
+SQL (Structured Query Language).
+
+O JDBC (Java Database Connectivity) é uma API nativa do Java (java.sql, javax.sql) que permite a aplicações Java conectarem-se, enviarem comandos SQL e processarem dados de bancos relacionais (MySQL, Oracle, etc.).
+
+Exam Number: 1Zo-071 é um teste da Oracle em inglês.
+
+O VSCode e o IntelliJJ possuem plugins com integração com o banco de dados. (AWS CLI, GCP CLI, AZURE CLI)
+
+Os Dados são os fatos primários sem contexto e a Informação são os fatos organizados que produzem significados juntos.
+
+Metadados: Dados sobre Dados, dicionário que garante consistência (Tipo, Tamanho, Restrições).
+
+O "Gerente" de tudo seria o SGBD, o pai do Modelo Relacional é o Dr. Edgar F. Codd (IBM, 1970), ele no qual criou a independência dos dados através de tabelas, substituindo modelo hierárquicos.
+
+Os três níveis da modelagem:
+- Modelo Conceitual (MCD): Alto nível de abstração, foco nas regras de negócio, de forma independente da tecnologia.
+- Modelo Lógico (MLD): Definição de estrutura, tabelas, chaves e atributos, sendo próximo da implementação.
+- Modelo Físico (MFD): Implementação técnica (DDL/SQL), os tipos de dados sendo o VARCHAR, INT, etc e índices.
+
+Peter Chen publicou o artigo sobre o Modelo Entidade Relacionamento em 1976.
+
+Cardinalidade:
+-1:1 (Um para um): EX-> Um professor tem um armário próprio e exclusivo.
+-1:N (Ou 1:M, que seria Um para Muitos): EX-> Um departamento possui diversos funcionários, mas um funcionário pertence somente a um departamento
+-N:M (Ou M:M, que seria Muitos para Muitos): EX-> Aluno cursa diversas matérias, e as matérias possuem diversos alunos.
+
+Integridade e Dependência: 
+- Integridade de Domínio: Rejeita tipos inválidos, aceita apenas numéricos.
+- Integridade Referencial: Bloqueia "órfãos", EX: Não é possível vender algo para um cliente inexistente.
+- Dependência Funcional: X determina Y, o valor de U depende unicamente do X.
