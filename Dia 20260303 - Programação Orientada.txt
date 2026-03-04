@@ -1,0 +1,105 @@
+03/03/2026 - Programação Orientada
+
+Bytecode: A chave para a independência da plataforma. O código não roda direito no hardware, mas na JVM (Máquina Virtual Java ou Java Virtual Machine).
+JAVA RESOLVE ISSO -> Write Once, Run Anywhere ou WORA.
+Um arquivo em Java, EX: Estudante.JAVA corresponde ao bytecode que seria o Estudante.Class e com isso é executado o Script.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+public class Animal {
+     String nome;        ---> Fields (Toda a parte do estado do objeto).
+     int idade;
+
+     public void comer() {
+         System.out.println("Nhac!");            ---> Methods (O comportamento).
+     }
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+No diretório SRC (Source) contém os arquivos .java e .class, usar o comando javac (Junto com o nome do arquivo) no terminal (Ou Power Shell) para o arquivo funcionar e depois digitar java (Nome do arquivo), tanto a classe quanto o arquivo precisam possuir o mesmo nome, EX: Classe Dog e Dog.java.
+Comandos usados para comentários: 
+"//" -> Comentário de uma linha
+"/*" -> Comentário de várias linhas, para cabeçalho.
+"/**" -> Comentário de várias linhas.
+
+Organização lógica por pacotes: package com.exemplo; Esses pacotes são apenas diretórios organizados.
+
+Imports: java.util.
+Wildcards (*): Importam todas as classes do pacotes, mas NÃO importam subpacotes, EX: "import java.util.*;"
+import java.util. random; possui o mesmo resultado que o "util*", o random possui preferência por ser mais específico e o "util*" é redundante .
+
+public. static void main(String args[] )
+{System.out.println( "Hi, i am a main method!"); -> Essa seria a porta de entrada para o Java Virtual Machine, só sendo executado com ele
+ System.out.println(args[0]);
+
+args = [1 2 3]
+args[0] = 1     ---> Args funcionam igual vetores, funcionando o código da mesma maneira!
+Quando for colocar um array com "nome composto" usar aspas simples, EX: args = [Cat, 'Pão de Queijo', Dog]. Se colocar sem essa aspa simples, o vetor muda de 3 dígitos para 4 (ou 5 nesse caso).
+
+public. static void mains(String args[] ) ---> Pode ser utilizado e não ocorre erros, mas ele não é compilado e mostrado no terminal depois, somente o main é executado e transmitido.
+------------------------------------------------------------------------------------------------------------------------------------------
+Exercício 1
+
+Which of the following are true?
+A - Jovac compiles a .class file into a .java file; --- Incorreto pois as ordens estão invertidas.
+B - Jovac compiles a .java file into a .bytecode file; --- Incorreto pois não existe arquivo .bytecode.
+C - Jovac compiles a .java file into a .class file; --- Correto.
+D - Java takes the name of the class as  parameter. --- Correto pois o nome da classe precisa ter o mesmo nome do arquivo.
+----------------------------------------------------------------------------------------------------------------------------
+Se digitar sout no programa IntelliJ ele coloca a linha de código: public. static void main(String args[] ).
+
+Identificadores: É o nome técnico dado a variáveis, métodos e classes. Os nomes podem ser iniciados com letras, $ e _ mas não pode ser iniciado com números, nem palavras reservadas (EXEMPLO: true.class) e não pode conter ponto de identificador simples (EXEMPLO: java.lang), (Public com P maiúsculo pode ser usado também, com p minúsculos ele conta como a palavras reservada do código).
+------------------------------------------------------------------------------------------------------------------------------------------
+Exercício 2
+
+Which of the following are valid java identifies?
+A - A$B --- Correto pois inicia com letra.
+B - _HelloWorld --- Correto pois inicia com _.
+C - true --- Incorreto pois é uma palavra reservada.
+D - java.lang --- Incorreto pois contém ponto.
+E - Public --- Correto pois o Public está com P maiúsculo, o java é Case sensitive.
+F - 1980_s --- Incorreto pois se inicia com número.
+-------------------------------------------------------------------------------------
+Exercício 3
+
+Given the following class, which of the following calls print out Blue Jay?
+public class BirdDisplay{
+ public. static void main(String[] name ){
+   system.out.println(name [1]);
+ }
+}
+A - java BirdDisplay Sparrow Blue Jay --- Incorreto pois dessa maneira ele não imprime a palavra composta, Blue Jay.
+B - java BirdDisplay Sparrow 'Blue Jay' --- Correto.
+C - java BirdDisplay Blue Jay Sparrow --- Incorreto, motivo igual o primeiro.
+D - java BirdDisplay "Blue Jay" Sparrow --- Incorreto pois só vai mostrar o vetor Sparrow.
+E - java BirdDisplay.class Sparrow "Blue Jay" --- Incorreto por conta do .class.
+F - java BirdDisplay.class "Blue Jay" Sparrow --- Incorreto pelo mesmo motivo da anterior.
+G - Does not compile. --- Incorreto, ele complica normalmente.
+----------------------------------------------------------------------------------------------------------------------
+Identificadores importantes:
+public. static void main(_______)
+String [] args
+String [] names
+String ... args
+String [] x
+-----------------------------------------------------------------------------------------------------
+Exercício 4
+
+Which of the following legally fill in the blank so you can run the main() method from command line?
+public. static void main (____)
+A - String []_names --- Correto.
+B - String []123 --- Incorreto.
+C - String abc[] --- Correto.
+D - String _Names[] --- Correto.
+E - String ... $n --- Correto.
+F - String names --- Incorreto pois não existe o colchete ou os três pontos.
+G - None of the above. --- Incorreto.
+---------------------------------------------------------------------------------------------------------
+Exercício 5
+
+Which of the following are legal entru point methods that na be run from the command line?
+A - private static void main (String[]args) --- Incorreto.
+B - public static final main (String[]args) --- Incorreto.
+C - public void main (String[]args) --- Incorreto.
+D - public static void test (String[]args) --- Incorreto.
+E - public static void main (String[]args) --- Correto.
+F - None of the above. --- Incorreto.
+---------------------------------------------------------------------------------------------
