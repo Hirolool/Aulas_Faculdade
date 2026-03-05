@@ -1,0 +1,107 @@
+Dia 04/03/2026 - Banco de Dados
+
+Modelagem de dados são divididas em três etapas: Conceitual -> MER (Modelo Entidade-Relacionamento)
+Lógica -> Escolha do SGBD
+Sistema de Gerenciamento do Banco de dados ->MYSQL Workbench
+
+-> Física, uso de scripts para criar tabelas e relacionamentos.
+-> Conceitual, usamos representações geométricas para caracterizar o nosso modelo:
+* Entidade (Representada por retângulos), representa a tabela Objeto.
+* Atributos (Representada por uma forma oval), representa as características de um objeto.
+* Relacionamento (Representada por losangos), relação entre as entidades (Objetos).
+
+Exemplo 1:
+Entidade 1 -> Usuário -> Atributos: id_usuario (PRIMARY KEY)
+                                    nome
+                                    e-mail                (1,1)
+                                    senha
+
+Entidade 2 -> Comentários -> Atributos: id_comentario (PRIMARY KEY)
+                                        comentário
+                                        data                (0,N)
+                                        hora
+
+(Se representa o modelo conceitual com as representações geométricas e com os atributos com bolinhas, não esqueça de pintar a primary key)
+Uma vez definido o modelo para essa duas entidades, a ferramenta chamada cardinalidade nos ajudará a entender melhor esses relacionamentos, também existem valores de MINÍMO E MÁXIMO, que pode ser perguntado com EX: "O usuário pode comentar quantas vezes?", ele pode não comentar e comentar diversas vezes (0, N) e o inverso também, EX: "O comentário pertence a quantos usuários?", um comentário 
+específico pertence somente a pessoa que o fez, então. (1,1)
+------------------------------------------------------------------------------------------------------------------------------------------
+Exemplo 2: 
+Entidade 1 -> Aluno -> Atributos: RGM (PRIMARY KEY)
+                                  nome
+                                  e-mail              (1,N)
+                                  celular
+
+Entidade 2 -> Disciplina -> Atributos: id_disciplina (PRIMARY KEY)
+                                       nome                             (1,N)
+                                       carga_horaria
+------------------------------------------------------------------------------------------------------------------------------------------
+Exemplo 3:
+Entidade 1 -> Pessoa -> Atributos: CPF (PRIMARY KEY)
+                                   nome                 (1,1)
+                                   celular
+
+Entidade 2 -> Endereço -> Atributos: CEP (PRIMARY KEY)
+                                     rua
+                                     cidade
+                                     numero                  (1,1)
+                                     bairro
+                                     estado
+
+Quando houver um relacionamento (1,1), as duas entidades vão se juntar, tornando-se uma única tabela.
+------------------------------------------------------------------------------------------------------------------------------------------
+Mapeamento dos Relacionamentos
+Abaixo são apresentadas os conceitos para mapear as relações:
+1:N -> O lado recebe a Foreign Key.
+N:N -> Nova Tabela, aonde ela recebe a chave das duas tabelas anteriores. (Entidade Associativa)
+1:1 -> União entre as duas tabelas, se tornando uma só.
+A partir dos 3 exemplos fundamentais para o mapeamento entre relacionamento de entidades, é importante compreender outra forma de representarmos a cardinalidade.
+
+Um (1) --------------------------------------|--
+Muitos (N) ----------------------------------<--
+Um e Um (1,1) -------------------------------||-
+Zero e Um (0,1) -----------------------------O|-
+Um e Muitos (1,N) ---------------------------|<-
+Zero e Muitos (0,N) -------------------------O<-
+------------------------------------------------------------------------------------------------------------------------------------------
+Transição do Modelo Conceitual (MER) para o modelo lógico
+Uma vez que aprendemos a contribuir o modelo conceitual, vamos visualizar o seu modelo lógico:
+Entidade 1 -> Usuário -> Atributos: id_usuario (PRIMARY KEY)
+                                    nome
+                                    e-mail                (1,1)
+                                    senha
+
+Entidade 2 -> Comentários -> Atributos: id_comentario (PRIMARY KEY)
+                                        comentário
+                                        data                (0,N)
+                                        hora
+
+Usuários
+*** id_usuario: int --------------------||-
+nome: varchar (50)
+e-mail: varchar (30)
+senha: varchar (32)
+
+Comentários
+*** id_comentario: int
+FK: id_usuario: int --------------------------O<-
+comentário: varchar (400)
+data: date
+hora: varchar (30)
+
+EXERCÍCIO FAZER OS MODELO LÓGICO DO (N,N) E (1,1)
+
+Modelo Físico
+USUÁRIO	USUÁRIO	USUÁRIO	USUÁRIO
+id_user	nome	e-mail	senha
+1	Maria	1@gmail.com	123
+2	Jose	2@outlook.com	321
+3	Paulo	3@yahoo.com	456
+4	Ana	4@ceunsp.gov.br	654
+
+
+COMENTÁRIO	COMENTÁRIO	COMENTÁRIO	COMENTÁRIO	COMENTÁRIO
+id_coment	coment	data	hora	id_user
+100	Oi	12/02	13:00	3
+101	Não	13/02	14:55	3
+102	Chato	14/02	22:00	4
+103	Legal	22/02	15:45	1
