@@ -1,0 +1,42 @@
+10/03/2026 - Programação Orientada
+
+Valores Padrões (Defualt Values):
+- Variáveis de instância recebem valores iniciais automaticamente.
+- Tipos primitivos numéricos viram 0 ou 0.0.
+EXEMPLO:
+class Exemplo {
+ int numero; --- Começa como 0.
+  String texto; --- Começa como null.
+
+Uma variável de instância é um atributo definido dentro de uma classe, mas fora de qualquer método, que armazena dados específicos de um objeto individual. Cada instância (objeto) da classe possui sua própria cópia separada dessas variáveis, permitindo que objetos diferentes da mesma classe tenham estados distintos. O que estiver dentro das "{}" é um escopo, quando se digita algo fora do escopo ele mostra um erro, mas o que pode ser digitado é somente as variáveis de instância.
+
+Valores Padrão por Tipo (Java/C#):
+- Tipos Numéricos Inteiros (byte, short, int, long): 0;
+- Tipos Numéricos de Ponto Flutuante (float, double): 0.0;
+- Booleano (boolean / bool): false;
+- Char (char): '\u0000' (caractere nulo);
+- Referências a Objetos (String, Arrays): null.
+
+Length é usado para encontrar o tamanho de arrays (como um atributo, ex: array.length) e length() para Strings (como um método, ex: texto.length()). Ele retorna o número de elementos ou caracteres, sendo crucial para iterações, contagem de caracteres e validações em geral.
+
+String é uma classe especial em Java: imutável (Algo que não se pode alterar), com pool de literais e métodos que sempre retornam novos objetos. .equals(): == compara apenas as referências, só retorna essa comparação quando ambos os atributos estão no mesmo String Pool.
+O String Pool (ou String Constant Pool) no Java é uma área especial de memória dentro do Heap, gerida pela JVM, usada para otimizar o armazenamento de literais de String. Ele armazena instâncias únicas de strings idênticas, economizando memória ao reutilizar objetos, o que é seguro devido à imutabilidade das strings. 
+Otimização: Evita a criação de múltiplos objetos String com o mesmo conteúdo.
+Funcionamento: Ao criar uma string com String s = "exemplo";, a JVM verifica o pool. Se a string já existir, ela retorna a referência existente; caso contrário, cria uma nova no pool.
+**Strings criadas com new String("exemplo"); são armazenadas diretamente no Heap, fora do pool, mesmo que o valor já exista.**
+
+.equals(); = Verifica se o conteúdo é o mesmo que outro armazenado.
+a == b = Verifica se possui a mesmo referência no pool.
+
+Concatenação é o processo de unir duas ou mais sequências de caracteres (strings), dados ou elementos em uma única sequência ordenada, amplamente usada em computação para juntar textos, nomes ou valores. Exemplos incluem: "casa" + "mento" = "casamento"
+s+= "two";
+
+EXEMPLO: s = "a b c d e f"
+lenght -> s.lenght() = 6 // Retorna 6 (Os códigos sendo do 0 até o 5)
+charAt -> s.charAt(3) = d
+substring -> 
+
+StringBuilder é mutável, diferente da String normal. Seus métodos modificam o próprio objeto, sem criar novos, é a contraparte eficiente de String para operações de concatenação em série.
+StringBuilder sb= new StringBuilder("bla");
+sb.append("!!!"); ---> Modifica a sb diretamente.
+System.out.println(sb); = "bla!!!".
